@@ -1,0 +1,135 @@
+:root {
+    scroll-behavior: smooth;
+
+    /* Font size and fonts */
+    --size: 15px;
+    --font1: 'Inter', sans-serif; /*Weights: 400, 700*/
+    --font2: 'Lexend Deca', sans-serif; /*Weight: 400*/
+
+    /* Colors */
+
+    /* Primary */
+    --very-dark-blue: hsl(233, 47%, 7%); /*Main background*/
+    --dark-desaturated-blue: hsl(244, 38%, 16%); /*card background*/
+    --soft-violet: hsl(277, 64%, 61%); /*accent*/
+
+    /* Neutral */
+    --white: hsl(0, 0%, 100%); /*main heading, stats*/
+    --slightly-transparent-white: hsla(0, 0%, 100%, 0.75); /*main paragraph*/
+    --slightly-transparent-white-2: hsla(0, 0%, 100%, 0.6); /*stat headings*/
+
+    /* 
+    
+    The designs were created to the following widths:
+
+    - Mobile: 375px
+    - Desktop: 1440px 
+
+    */
+}
+
+body {
+    font-size: var(--size);
+}
+
+.container {
+    height: 100vh;
+    background: var(--very-dark-blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    width: 100%;
+}
+
+.card {
+    width: 85%;
+    margin: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    background: var(--dark-desaturated-blue);
+}
+
+.card__container {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    position: relative;
+    width: 100%;
+}
+
+.image__img {
+    width: 100%;
+}
+
+.image::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: var(--soft-violet);
+    opacity: 0.6;
+}
+
+.content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+}
+
+.content__h1 {
+    width: 80%;
+    color: var(--white);
+    font-family: var(--font1);
+    font-weight: 700;
+    font-size: 1.9em;
+    letter-spacing: 1px;
+}
+
+.content__span {
+    color: var(--soft-violet);
+}
+
+.content__p {
+    display: inline-block;
+    margin: 0;
+    width: 70%;
+    color: var(--slightly-transparent-white);
+    font-family: var(--font2);
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+.content__container {
+    margin: 1em 0;
+    width: 100%;
+}
+
+.content__h2 {
+    margin-bottom: .5em;
+    color: var(--white);
+    font-family: var(--font1);
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.content__p--stats {
+    margin: 0;
+    font-size: .8em;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
