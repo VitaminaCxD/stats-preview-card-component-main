@@ -33,7 +33,7 @@ body {
 }
 
 .container {
-    height: 100vh;
+    height: 100%;
     background: var(--very-dark-blue);
     display: flex;
     flex-direction: column;
@@ -43,6 +43,7 @@ body {
 
 .main {
     width: 100%;
+    padding: 1em;
 }
 
 .card {
@@ -91,11 +92,11 @@ body {
 }
 
 .content__h1 {
-    width: 80%;
+    width: 100%;
     color: var(--white);
     font-family: var(--font1);
     font-weight: 700;
-    font-size: 1.9em;
+    font-size: 1.8em;
     letter-spacing: 1px;
 }
 
@@ -106,7 +107,7 @@ body {
 .content__p {
     display: inline-block;
     margin: 0;
-    width: 70%;
+    width: 95%;
     color: var(--slightly-transparent-white);
     font-family: var(--font2);
     font-weight: 400;
