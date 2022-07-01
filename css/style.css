@@ -157,6 +157,8 @@ body {
 
     .card {
         width: 50%;
+        min-width: 60%;
+        min-height: 60%;
     }
 
     .card__container {
@@ -183,7 +185,7 @@ body {
 
     .content__h1 {
         width: 80%;
-        margin-top: 2em;
+        /* margin-top: 2em; */
     }
 
     .content__p {
