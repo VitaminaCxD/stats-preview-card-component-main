@@ -66,11 +66,7 @@ body {
     position: relative;
     width: 100%;
 }
-
-.image__img {
-    width: 100%;
-}
-
+ 
 .image::after {
     content: "";
     position: absolute;
@@ -78,8 +74,13 @@ body {
     left: 0;
     bottom: 0;
     right: 0;
+    max-height: 99%;
     background: var(--soft-violet);
     opacity: 0.6;
+}
+
+.image__img {
+    width: 100%;
 }
 
 .content {
